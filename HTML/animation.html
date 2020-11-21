@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		.anim1{
+			width: 300px;
+			height: 300px;
+			background-color: orange;
+			animation-name: colorchnage1;
+			animation-duration: 2s;
+			float: left;
+			animation-iteration-count: infinite;
+			animation-direction: alternate; 
+
+		}
+
+		@keyframes colorchnage1{
+			from{background-color: orange;}
+			to{background-color: green;}
+		}
+
+		.anim2{
+			width: 300px;
+			height: 300px;
+			background-color: lightgreen;
+			animation-name: colorchnage2;
+			animation-duration: 0.5s;
+			float: left;
+			text-align: center;
+			margin-top: 40px;
+			animation-iteration-count: infinite;
+			animation-direction: alternate; 
+		}
+
+		@keyframes colorchnage2{
+			from{background-color: white;}
+			to{background-color: white;}
+		}
+
+		.anim3{
+			width: 300px;
+			height: 300px;
+			background-color: green;
+			animation-name: colorchnage3;
+			animation-duration: 2s;
+			float: left;
+			animation-iteration-count: infinite;
+			animation-direction: alternate; 
+		}
+
+		@keyframes colorchnage3{
+			from{background-color: green;}
+			to{background-color: orange;}
+		}
+
+		.chak{
+				fill: blue;
+				animation-name: chak1;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate; 
+		}
+		@keyframes chak1{
+			from {fill:white;}
+			to {fill:blue;}
+		}
+
+		.anim4{
+			width: 120px;
+			height: 120px;
+			background-color: red;
+			animation-name: anim41;
+			animation-duration: 4s;
+			/*clear: both;*/
+			float: left;
+			margin-left: 5px;
+			position: relative;
+		/*	animation-delay: -2s;*/
+		animation-iteration-count: infinite;
+		animation-direction: alternate; 
+		}
+
+		@keyframes anim41{
+			0% { background-color: red; left: 0px; top: 0px; }
+			25% { background-color: orange; left: 200px; top: 0px; }
+			50% { background-color: yellow; left: 200px; top: 200px; }
+			75% { background-color: blue; left: 0px; top: 200px; }
+			100% { background-color: red; left: 0px; top: 0px; }
+		}
+
+body{
+	background-color: skyblue;
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="anim1"></div>
+	<div class="anim2">
+		<svg width="300" height="300" style="background-color: lightgreen;">
+  		<circle cx="150" cy="100" r="100" stroke="green" stroke-width="0" fill="white" class="chak"/>
+		</svg>
+	</div>
+	<div class="anim3"></div>
+
+	<div class="anim4">
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form JS</title>
+</head>
+<body>
+	<p>Please Enter Number between 1 to 10 </p>
+	<input type="text" id="input1">
+	<button  type="button" onclick="testFunction()">Test</button>
+	<p id="op"></p>
+
+
+
+	<p id="thisk"></p>
+
+	<p id="arrf"></p>
+
+	<p id="car1"></p>
+
+	<script>
+		function testFunction(){
+		var msg,x;
+
+		msg = document.getElementById("op");
+  	msg.innerHTML = "";
+
+		x = document.getElementById("input1").value;
+		try{
+			if (x == "") throw "Empty";
+			if (isNaN(x)) throw "Not A Number";
+			x = Number(x);
+			if (x < 0) throw "Too Low Number";
+			if (x > 10) throw"Too High Number";
+			if (0< x < 10) throw "Ok";
+			
+			}
+			catch(ans){
+				msg.innerHTML = "Input Is " + ans;
+			}
+			finally {
+   			 document.getElementById("input1").value = "";
+ 			 }
+		}
+
+
+		var person= {
+			firstName:"Hardik",
+			lastName:"Moradiya",
+			fullName: function(){
+				return this.firstName + " " + this.lastName;
+			}
+		};
+
+		document.getElementById("thisk").innerHTML= person.fullName();
+
+		var arr;
+
+		arr = () =>{
+  			return "Arrow Function";
+		}
+
+		document.getElementById("arrf").innerHTML = arr();
+
+		class car{
+			constructor(name, price){
+				this.name= name;
+				this.price= price;
+			}
+		}
+
+		car1 =new car("KIA", "14,000,00");
+		document.getElementById("car1").innerHTML= car1.name + " " + car1.price;
+
+		</script>
+
+
+
+
+</body>
+</html>

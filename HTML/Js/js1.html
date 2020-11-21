@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS1</title>
+</head>
+<body>
+
+	<h1 id="detail" style="font-size: 10px;">My name is Hardik</h1>
+	<button type="button" onclick="document.getElementById('detail').style.fontSize='90px'">Zoom</button>
+	<button type="button" onclick="document.getElementById('detail').style.fontSize='10px'">Zoom Out</button>
+
+<br>
+<br>
+
+	<button type="button" onclick="document.getElementById('bulb').src='on.png'">ON</button>
+	<img src="off.png" id="bulb" style="height:300px;width:200px;">
+	<button type="button" onclick="document.getElementById('bulb').src='off.png'">OFF</button>
+
+<br>
+<br>
+
+	<h1 id="detail2">My name is Hardik Moradiya</h1>
+
+	<button type="button" onclick="myFunction()">Change Name</button>
+	<button type="button" onclick="myFunctionb()">Back</button>
+
+	<button onclick="window.print()">Print this page</button>
+
+	<p id="sum"></p>
+
+	<button type="button" onclick="kali()">Hey!</button>
+	<p id="kali1"></p>
+
+	<button onclick="document.getElementById('time').innerHTML=Date()">Click for Time</button>
+	<p id="time"></p>
+	<button onclick="this.innerHTML=Date()">Time?</button>
+
+	<p id="str"></p>
+
+	<p id="leg"></p>
+
+	<p id="line3"></p>
+
+	<p id="type1"></p>
+	<p id="comp"></p>
+
+	<p id="ind"></p>
+
+	<p id="sls"></p>
+	<p id="rpl"></p>
+	<p id="upr"></p>
+	<p id="lwr"></p>
+
+	<p id="nan"></p>
+	<p id="tyn"></p>
+
+	<p id="ex"></p>
+
+	<p id="arr1"></p>
+	<p id="arr2"></p>
+
+	<p id="joint"></p>
+	<p id="num1"></p>
+
+	
+	<button onclick="rFunction()">Make Randome</button>
+	<p id="randome"></p>
+
+	<p id="arrMap"></p>
+
+	<p id="dt"></p>
+
+	<p id="math1"></p>
+
+	<p id="tday"></p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById("detail2").innerHTML="NO Other Name Found";
+		}
+		function myFunctionb(){
+			document.getElementById("detail2").innerHTML="My name is Hardik Moradiya";
+		}
+
+		var x,y,z;
+		x = 5;
+		y = 5;
+		z = x + y;
+
+		document.getElementById("sum").innerHTML="Sum = " + z;
+
+		function kali(){
+			document.getElementById("kali1").innerHTML="How are you?";
+		}
+
+		var car1 = "creta";
+		var car2 = "KIA";
+
+		document.getElementById("str").innerHTML="I Like the famous car " + car2;
+
+		var xy = "abcdefghijklmnopqrstuvwxyz";
+		var yx = xy.length;
+
+		document.getElementById("leg").innerHTML= yx;
+
+		var li1="Hardik";
+		var li2="Lalitbhai";
+		var li3="Moradiya";
+
+		document.getElementById("line3").innerHTML= li1 + "<br>" + li2 + "<br>"+ li3 ;
+
+		var name = "Hardik";
+		var fname = new String("Hardik");
+
+		document.getElementById("type1").innerHTML= typeof name + "<br>" + typeof fname;
+		document.getElementById("comp").innerHTML= (name == fname) ;
+
+		var abc = "I am Hardik Moradiya";
+		var indx = abc.lastIndexOf("i");
+
+		document.getElementById("ind").innerHTML= indx;
+
+		var str = "I like Orange";
+		var sls1 = str.slice(4,10);
+		var rpl1 = str.replace("Orange","Mango");
+		var upr1 = str.toUpperCase();
+		var lwr1 = str.toLowerCase();
+
+		document.getElementById("sls").innerHTML= sls1 ;
+		document.getElementById("rpl").innerHTML= rpl1;
+		document.getElementById("upr").innerHTML= upr1;
+		document.getElementById("lwr").innerHTML= lwr1;
+
+		var nan1= 10 / "apple";
+
+		document.getElementById("nan").innerHTML=isNaN();
+
+		var tyn1 = NaN;
+
+		document.getElementById("tyn").innerHTML=typeof tyn1;
+
+		var ex1 = 6.532902;
+		document.getElementById("ex").innerHTML= ex1.toExponential() + "<br>" +ex1.toFixed(2) +"<br>" + ex1.toPrecision(3) + "<br>" + ex1.toExponential(4);
+
+		var arr11= ["Moradiya","Hardik","Lalitbhai"];
+		var ranArr = arr11[2];
+
+		document.getElementById("arr1").innerHTML= arr11 +"<br>"+ ranArr + "<br>"+ arr11.length;
+
+		var areLen = arr11.length;
+		var text,i;
+
+		text = "<ul>";
+		for(i=0; i<areLen; i++){
+			text += "<li>" + arr11[i] + "</li>";
+			}
+
+			text += "</ul>";
+
+			document.getElementById("arr2").innerHTML= text;
+
+			document.getElementById("joint").innerHTML= arr11.join("*") +"<br>"+ arr11.sort() +"<br>"+ arr11.reverse();
+
+			var numa=[5,20,6,25,50,4];
+			numa.sort(function(a,b){return a-b});
+
+			document.getElementById("num1").innerHTML= numa;
+
+			var numa11=[5,20,6,25,50,4];
+			document.getElementById("randome").innerHTML=numa11;
+
+			function rFunction(){
+				numa11.sort(function(a, b){return 0.5 - Math.random()});
+
+				document.getElementById("randome").innerHTML= numa11;
+			}
+
+			var arrMap1 = [2,8,3,6,9,7,1,6,4];
+			var arrMap2 = arrMap1.map(mapFunction2);
+			var arrMap3 = arrMap1.filter(mapFunction3)
+			var arrMap4 = arrMap1.every(mapFunction3)
+
+			function mapFunction2(value, index, array){
+					return value*5;
+			}
+
+			document.getElementById("arrMap").innerHTML= arrMap2 + "<br>" + arrMap3 + "<br>" + arrMap4;
+
+			function mapFunction3(value, index, array){
+				return value > 5;
+			}
+			function mapFunction4(value, index, array){
+					return value >6;
+			}
+
+			var d = new Date();
+
+			document.getElementById("dt").innerHTML= d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate() + "<br>"  + d.getHours() + ":"  + d.getMinutes() + ":" + d.getSeconds();
+
+			var m1=5.6;
+			document.getElementById("math1").innerHTML= Math.PI + "<br>" + Math.round(m1) + "<br>" + Math.pow(5,2) + "<br>"  + Math.sqrt(25) + "<br>" + Math.abs(-5.60) + "<br>" + Math.ceil(5.60)+ "<br>" + Math.floor(5.60)+ "<br>" + Math.min(2,8,3,6,9,7,1,6,4) + "<br>" + Math.max(2,8,3,6,9,7,1,6,4)+ "<br>" + Math.random(2,8,3,6,9,7,1,6,4)+ "<br>" + Math.floor(Math.random() * 10) ;
+
+				
+				var day;
+
+				switch(new Date().getDay()){
+					case 0 :
+						day = "Sunday";
+						break;
+					case 1 :
+						day = "Monday";
+						break;
+					case 2 :
+						day = "Tuesday";
+						break;
+					case 3 :
+						day = "Wednesday";
+						break;
+					case 4 :
+						day = "Thursday";
+						break;
+					case 5 :
+						day = "Friday";
+						break;
+					case 6 :
+						day = "Saturday";
+						break;
+					
+				}
+				document.getElementById("tday").innerHTML= "Today is "+ day;
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Practice</title>
+	<style type="text/css">
+		.divbg{
+			background-image: url("temp1.jpg");
+			height: 500px;
+			width: 1000px;
+			background-repeat: no-repeat;
+  		background-attachment: fixed;
+
+  		background-size: cover;
+		}
+		p{
+			text-indent: 3px;
+			text-decoration: line-through;
+			text-transform: uppercase;
+
+		}
+
+		table, th, tr td{
+			border: 2px solid black;
+			border-collapse: collapse;
+			margin: 10px;
+			padding: 10px;
+			width: 40%;
+			text-align: center;
+
+		}
+
+		#pattern th{
+			background-color: black;
+
+		}
+
+		#pattern tr:nth-child(even){
+			background-color: #f2f2f2;
+		}
+
+		#pattern tr:hover{
+			background-color: #ddd;
+		}
+		.abso{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.container{
+			position: relative;
+			 counter-reset: section;
+		}
+		.oflow{
+			background-color: black;
+			color: white;
+			margin: 10px;
+			padding: 3px;
+			overflow: scroll;
+			height: 400px;
+			width: 400px;
+		}
+
+		.pos{
+			position: sticky;
+			top: 0;
+			clear: both;
+		}
+
+			.maxw{
+			border:3px solid black;		
+			
+			background-color: blue;
+			color: white;
+			padding: 	0px;
+			margin: 0px;
+			list-style-type: none;
+		}
+		.maxw li{
+			display: inline-block;
+			height: 50px;
+			width: 60px;
+			padding: 20px;
+		}
+		.nav {
+  background-color: yellow; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.ok{
+	background-color: red;
+	text-align: center;
+	
+	}
+.ok:hover{
+	
+	background-color: yellow;
+}
+
+	p::first-latter{
+		color: red;
+		font-size: xx-large;
+	}
+
+
+	::selection{
+		color: red;
+		background-color: yellow;
+	}
+img{
+	opacity: 0.2;
+}
+img:hover{
+	opacity: 1;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	
+  background-color: #f1f1f1;
+}
+li{
+	float: left;
+}
+li a{
+	  display: inline;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.active{
+	background-color: green;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+h2::before {
+  counter-increment: name;
+  content: "name " counter(name) ": ";
+}
+#border1{
+	
+	border-radius: 5px 10px 20px 40px;
+	background-color: pink;
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+}
+.transfomer{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	transition: width 2s;
+	
+}
+.transfomer:hover{
+	width: 300px;
+	background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet)
+	transition-timing-function: ease-out;
+}
+
+	</style>
+
+</head>
+<body >
+	
+	<ui class="nav" style="clear:left;">
+		<li>home</li>
+		<li>menu</li>
+		<li>gallery</li>
+		<li>contact us</li>
+		<li>about us</li>
+	</ui>
+
+<div style="width: 50%; float: left; background-color:yellow">
+<h1 style="background-color: red;">Hardik</h1>
+<h2 style="background-color: pink;">Hardik</h2>
+<h3 style="background-color: orange;">Hardik</h3>
+<h4 style="background-color: green;">Hardik</h4>
+<h5 style="background-color: rgba(100,50,30,0.2);">Hardik</h5>
+<h6 style="background-color: rgba(60,80,100,0.5);">Hardik</h6>
+</div>
+<div style="width: 30%; float: left; background-color:black;color: white;">
+	<p style="padding: 50px;">My nname is hardik</p>
+	<p style="padding: 50px;">I am learning css</p>
+</div>
+<div style="width: 20%; float: left;background-color:orange;">
+	<h1 style="text-align: center;">Hardik</h1>
+</div>
+<div style="width: 20%; float: left;background-color: white;">
+	<h1 style="text-align: center;">Lalitbhai</h1>
+</div>
+<div style="width: 20%; float: left;background-color: green;">
+	<h1 style="text-align: center;">Moradiya</h1>
+</div>
+
+<div class="divbg"  style="text-align: left;clear: left;">
+
+	<p  style="letter-spacing: -5px;">My name is hardik</p>
+	<p  style="letter-spacing: 5px;">My name is hardik</p>
+	<p  style="line-height: 2;">My name is hardik</p>
+	<p  style="line-height: -2;">My name is hardik</p>
+</div>
+
+<div>
+	<h1 style="text-shadow: 0px 0px 5px black,0px 0px 10px blue;color: white;">Hardik</h1>
+</div>
+<br>
+<div >
+<table id="pattern" style="box-shadow: 10px 10px 10px gray; margin: 15px;">
+	<tr>
+		<th style="color: white;">No.</th>
+		<th style="color: white;">Sub.</th>
+		<th style="color: white;">Faculty</th>
+	</tr>
+
+	<tr>
+		<td>1</td>
+		<td>Maths</td>
+		<td>Hardik</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Science</td>
+		<td>Roshan</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>English</td>
+		<td>Brijesh</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Physics</td>
+		<td>Jigar</td>
+	</tr>
+</table>
+</div>
+<h1 style="display: none;">My name is hardik</h1>
+
+<div class="container" style="float: left;">
+	<img src="temp1.jpg" style="height:600px; width: 600px;opacity: 0.5">
+	<h1 class="abso">Happy Dhanteras</h1>	
+</div>
+<div class="oflow" style="float: left;">
+	<p>Mohandas Karamchand Gandhi (/ˈɡɑːndi, ˈɡændi/;[2] 2 October 1869 – 30 January 1948), also known as Mahatma Gandhi, was an Indian lawyer,[3] anti-colonial nationalist,[4] and political ethicist,[5] who employed nonviolent resistance to lead the successful campaign for India's independence from British rule,[6] and in turn inspired movements for civil rights and freedom across the world. The honorific Mahātmā (Sanskrit: "great-souled", "venerable"), first applied to him in 1914 in South Africa, is now used throughout the world.[7][8]Born and raised in a Hindu family in coastal Gujarat, western India, Gandhi trained in law at the Inner Temple, London, and was called to the bar at age 22 in June 1891. After two uncertain years in India, where he was unable to start a successful law practice, he moved to South Africa in 1893 to represent an Indian merchant in a lawsuit. He went on to stay for 21 years. It was in South Africa that Gandhi raised a family, and first employed nonviolent resistance in a campaign for civil rights. In 1915, aged 45, he returned to India. He set about organising peasants, farmers, and urban labourers to protest against excessive land-tax and discrimination. Assuming leadership of the Indian National Congress in 1921, Gandhi led nationwide campaigns for easing poverty, expanding women's rights, building religious and ethnic amity, ending untouchability, and above all for achieving Swaraj or self-rule.[9]
+</p>
+</div>
+
+<div class="ok" style="clear: both;">
+	<marquee behavior="alternate" scrollamount="10"><h1 style="text-shadow: 3px 3px 10px gray;"class="ok1">Hardik Moradiya</h1></marquee>
+</div>
+
+<div>
+	<p class="ps">The game of thrones.</p>
+</div>
+<br>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div><br>
+<ul>
+	<li class="active"><a href="">Home</a></li>
+	<li><a href="">About</a></li>
+	<li><a href="">Contact</a></li>
+	<li><a href="">Product</a></li>
+</ul>
+<h2>hardik</h2>
+<h2>roshan</h2>
+<h2>brijesh</h2>
+<h2>jigar</h2>
+
+<br>
+<hr>
+<div id="border1" style="background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet)">
+
+</div>
+<br>
+<div class="transfomer">
+
+</div>
+
+</body>
+</html>
