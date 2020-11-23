@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#hide1").hide(1000);
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn01").click(function(){
+				$("#hide1").show(1000);
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn2").click(function(){
+				$("#btn2").hide();
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn3").click(function(){
+				$(".classHide").hide();
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn4").click(function(){
+				$("#firstP").hide();
+			});
+		});
+
+		$(document).ready(function(){
+ 			$("#btn5").dblclick(function(){
+    		$("#btn5").hide();
+  		});
+		});
+
+		$(document).ready(function(){
+ 			$("#info1").mouseenter(function(){
+    		alert("you aee on peragraph 1");
+  		});
+		});
+		
+		$(document).ready(function(){
+ 			$("#info2").mouseenter(function(){
+    		alert("you aee on peragraph 2");
+  		});
+		});
+
+		$(document).ready(function(){
+ 			$("#info3").mousedown(function(){
+    		alert("I am Heading with size 4");
+  		});
+		});
+
+		$(document).ready(function(){
+ 			$("#btn6").focus(function(){
+    		$(this).css("background-color","yellow");
+  		});
+  		$("#btn6").blur(function(){
+    		$(this).css("background-color","red");
+  		});
+		});
+
+		$(document).ready(function(){
+			$("#multievent").on({
+				mouseenter: function(){
+					$(this).css("background-color","orange");
+				},
+				 mouseleave: function(){
+					$(this).css("background-color","green");
+				},
+					click: function(){
+					$(this).css("background-color","blue");
+				}
+				});
+			});
+
+		$(document).ready(function(){
+			$("#btn7").click(function(){
+				$("#fade1").fadeIn(1000);
+				$("#fade2").fadeIn(2000);
+				$("#fade3").fadeIn(3000);
+				$("#fade4").fadeIn(4000);
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn8").click(function(){
+				$("#fade1").fadeOut(4000);
+				$("#fade2").fadeOut(3000);
+				$("#fade3").fadeOut(2000);
+				$("#fade4").fadeOut(1000);
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn9").click(function(){
+				$("#fade5").fadeToggle(1000);
+				$("#fade6").fadeToggle(2000);
+				$("#fade7").fadeToggle(3000);
+				$("#fade8").fadeToggle(4000);
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn9").click(function(){
+				$("#fade5").fadeTo(1000, 0.5);
+				$("#fade6").fadeTo(2000, 0.5);
+				$("#fade7").fadeTo(3000, 0.5);
+				$("#fade8").fadeTo(4000, 0.5);
+			});
+		});
+		
+		$(document).ready(function(){
+			$("#slideB").click(function(){
+				$("#slideT").slideToggle(1000);
+			});
+		});
+
+		$(document).ready(function(){
+  		$("#btn10").click(function(){
+    		var div = $("#animation1");
+   				 div.animate({height: '300px', opacity: '0.4'}, "slow");
+   				 div.animate({width: '300px', opacity: '0.8'}, "slow");
+   				 div.animate({height: '100px', opacity: '0.4'}, "slow");
+   				 div.animate({width: '100px', opacity: '0.8'}, "slow");
+ 		 });
+		});
+
+		$(document).ready(function(){
+ 		 $("#btn11").click(function(){
+   		 $("#alertHide").hide(2000);
+   		 alert("The paragraph is now hidden");
+  		});
+		});
+
+		$(document).ready(function(){
+ 		 $("#btn12").click(function(){
+    	alert("Text: " + $("#text1").text());
+ 		 });
+ 		 $("#btn13").click(function(){
+   		 alert("HTML: " + $("text1").html());
+ 			});
+		});
+		
+		$(document).ready(function(){
+			 $("#btn14").click(function(){
+   			 $("#list1").append("<li>Added item in Last</li>");
+ 			 });
+			});
+		$(document).ready(function(){
+			 $("#btn15").click(function(){
+   			 $("#list1").prepend("<li>Added item in Top</li>");
+ 			 });
+			});
+
+		$(document).ready(function(){
+			$("#btn16").click(function(){
+				$("#cssClass1, #cssClass2").toggleClass("cssClass01");
+				$("cssClass3").toggleClass("cssClass001");
+			});
+		});
+
+		$(document).ready(function(){
+  $("#btn17").click(function(){
+    var txt = "";
+    txt += "Width of div: " + $("#handw").width() + "</br>";
+    txt += "Height of div: " + $("#handw").height() + "</br>";
+    txt += "Outer width of div: " + $("#handw").outerWidth() + "</br>";
+    txt += "Outer height of div: " + $("#handw").outerHeight(); + "</br>";
+    txt += "Outer width of div: " + $("#handw").outerWidth() + "</br>";
+    txt += "Outer height of div: " + $("#handw").outerHeight();
+    $("#handw").html(txt);
+ 	 });
+	});
+
+	
+	</script>
+	<style type="text/css">
+		#slideB {
+			width: 10%;
+			height: auto;
+			background-color: gray;
+			padding: 5px;
+			border: 2px solid black;
+			text-align: center;
+			color: white;
+		}
+
+		#slideT{
+			width: 50%;
+			height: 100px;
+			background-color: gray;
+			padding: 7px;
+			border: 2px solid black;
+			display: none;
+			text-align: center;
+			color: white;
+		}
+
+		.cssClass01{
+			color: red;
+			text-shadow: 5px 5px 10px orange;
+				}
+			.cssClass001{
+				color: red;
+				text-shadow: 5px 5px 10px orange;
+				background-color: yellow;
+			}
+
+			#handw {
+  			height: 200px;
+  			width: 400px;
+  			padding: 10px;
+  			margin: 3px;
+  			border: 1px solid black;
+ 				background-color: yellow;
+			}
+	
+	</style>
+</head>
+<body>
+	<h3>Hide & Show Element + Speed</h3>
+	<p id="hide1">I am Hide, if you click button!</p>
+	<button id="btn1" name="btn1">Hide</button>
+	<button id="btn01" name="btn01">Show</button>
+
+	<h3>Hide self</h3>
+	<button id="btn2" name="btn2">Click Me!</button>
+
+
+
+	<h3>Hide with class name</h3>
+	<p class="classHide">I am that peragraph with class name "classHide".</p>
+	<p>I am not that peragraph with class name "classHide".</p>
+	<button id="btn3" name="btn3">Hide P who have class "classHide"</button>
+
+	<h3>Hide first P</h3>
+	<p id="firstP">I am First P.</p>
+	<p>I am second P.</p>
+	<button id="btn4" name="btn4">Hide first P</button>
+
+	<h3>Hide self with Double Click</h3>
+	<button id="btn5" name="btn5">Hide with Double Click</button>
+
+	<h3>P No throgh Mouse Curser</h3>
+	<div style="height: 100px; width: 350px;">
+	<p id="info1">I am peragraph 1, move mouse curser on me , you get alert notification that "you aee on peragraph 1"</p>
+	<p id="info2">I am peragraph 2, move mouse curser on me , you get alert notification that "you aee on peragraph 2"</p>
+	</div>
+
+	<h3>Click Information</h3>
+	<h4 id="info3">Click me to Know me!</h4>
+
+	<h3>Focus & Blur</h3>
+	<button id="btn6" name="btn6">Cleck Me & Leave me!</button>
+
+	<h3>Multiple Event</h3>
+	<p id="multievent">Move mouse curser on me or click on me!</p>
+
+	<h3>Fade IN & OUT</h3>
+	<button id="btn7" name="btn7">Show Boxes</button>
+	<button id="btn8" name="btn8">Hide Boxes</button>
+	<br>
+	<br>
+	<div id="fade1" style="width:80px;height:80px;display:none;background-color:red;float: left;"></div>
+	<div id="fade2" style="width:80px;height:80px;display:none;background-color:orange;float: left;"></div>
+	<div id="fade3" style="width:80px;height:80px;display:none;background-color:yellow;float: left;"></div>
+	<div id="fade4" style="width:80px;height:80px;display:none;background-color:pink;float: left;"></div>
+	<br>
+	<br>
+	<h3 style="clear: both;">Fade Toggle & Fade To</h3>
+	<button id="btn9" name="btn9">Show Boxes ON/OFF</button>
+	<br>
+	<br>
+	<div id="fade5" style="width:80px;height:80px;display:none;background-color:red;float: left;"></div>
+	<div id="fade6" style="width:80px;height:80px;display:none;background-color:orange;float: left;"></div>
+	<div id="fade7" style="width:80px;height:80px;display:none;background-color:yellow;float: left;"></div>
+	<div id="fade8" style="width:80px;height:80px;display:none;background-color:pink;float: left;"></div>
+	<br>
+	
+	<h3>Slide Down & UP Using Toggle</h3>
+	<div id="slideB">Click Me to Show Below Detail</div>
+	<div id="slideT">Nothing Here! :) </div>
+	<br>
+
+	<h3>Animation</h3>
+	<button id="btn10">Strat Animation</button><br>
+	<div id="animation1"style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+	<br>
+	<br>
+	<br><br><br>
+	<br>
+	<h3 style="clear: both;">Alert Hide</h3>
+	<button id="btn11">Click to Hide Permition</button>
+	<p id="alertHide">This peragraph is going to hide after you gave permition to Hide after click button.</p>
+	<br>
+
+	<h3>Text & HTML</h3>
+	<button id="btn12">Show Text</button>
+	<button id="btn13">Show HTML</button>
+	<p id="text1">My name is <b>Hardik Moradiya</b></p>
+	<br>
+
+	<h3>Append & Prepend</h3>
+	<ol id="list1" type="1">
+		<li>Hardik</li>
+		<li>Hardik1</li>
+		<li>Hardik3</li>
+	</ol>
+	<button id="btn14" name="btn14">Add Item In Last</button>
+	<button id="btn15" name="btn15">Add Item In Top</button>
+
+	<h3>CSS Class</h3>
+	<h1 id="cssClass1" class="cssClass01">Hello!</h1>
+	<p id="cssClass2" class="cssClass01">How are You?</p>
+	<div id="cssClass3" class="cssClass001">Are You Fine?</div><br>
+	<button id="btn16">Add and Remove CSS Class</button>
+
+	<h3>Width and Hight</h3>
+	<div id="handw"></div>
+	<br>
+	<button id="btn17" name="btn17">Display dimensions of div</button>
+
+</body>
+</html>
