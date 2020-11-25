@@ -17,9 +17,31 @@ function toggleIcon(e) {
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
-@media (max-width: @screen-md-max) {
-    .meetM{
-        padding: 0;
-        overflow-x: hidden;
-    }
-}
+
+$(document).ready(function(){
+	$(".timeCs1").click(function(){
+		$(".timeCs1").removeClass("active-time1");
+		$(this).addClass("active-time1");
+			});
+});
+
+$(document).ready(function(){
+	$(".timeCs2").click(function(){
+		$(".timeCs2").removeClass("active-time2");
+		$(this).addClass("active-time2");
+			});
+});
+
+$(document).ready(function(){
+	$(".timeCs3").click(function(){
+		$(".timeCs3").removeClass("active-time3");
+		$(this).addClass("active-time3");
+			});
+});
+
+$(document).ready(function(){
+	$(".timeCs4").click(function(){
+		$(".timeCs4").removeClass("active-time4");
+		$(this).addClass("active-time4");
+			});
+});

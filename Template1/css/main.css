@@ -38,6 +38,8 @@
 
 .borderc{
 	border: 2px solid #30336B;
+	border-radius: 30px;
+	font-size: 15px;
 
 }
 
@@ -55,6 +57,7 @@
 .cardO{
 	border: 2px solid #30336B;
 	padding: 10px;
+
 }
 
 .cardH{
@@ -280,8 +283,59 @@ position:absolute;
     #meetM{
         margin-left: 1px !important;
         margin-top: 2px !important;
-        
+
        
     }
 }
 
+@media (max-width : 600px) {
+	#timeM{
+		font-size: 12px !important;
+		padding: 2px !important;
+		margin-right: 2px !important;
+	}
+}
+
+.active-time1{
+	background-color: #30336B;
+	color: white;
+}
+
+.active-time2{
+	background-color: #30336B;
+	color: white;
+}
+
+.active-time3{
+	background-color: #30336B;
+	color: white;
+}
+
+.active-time4{
+	background-color: #30336B;
+	color: white;
+}
+
+
+.card-borderT{
+	border-radius: 20px 20px 0px 0px;
+}
+
+.card-borderB{
+	border: 2px solid #30336B;
+	padding: 10px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.card{
+	border: none !important;
+}
+
+.cardBr{
+	border-radius: 15px !important;
+	width: 140px !important;
+}
+
+.active{
+	color: #45CE30 !important;
+}
