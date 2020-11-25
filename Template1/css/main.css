@@ -239,7 +239,7 @@ position:absolute;
 }
 
 .enterI{
-	width: 250px;
+	width: 300px;
 	border-radius: 50px;
 	background-color: #065535;
 	color: white !important;
@@ -262,9 +262,11 @@ position:absolute;
 }
 
 .select11{
-	width: 100%;
-	border-top: 2px solid gray;
+	width: 60%;
+	border-top: 1px solid #DAE0E2 !important;
 	margin-bottom: 20px;
+	padding: 5px;
+	box-shadow: 0px;
 }
 
 .nav-icon{
@@ -336,6 +338,3 @@ position:absolute;
 	width: 140px !important;
 }
 
-.active{
-	color: #45CE30 !important;
-}
