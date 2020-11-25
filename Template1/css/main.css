@@ -5,7 +5,6 @@
 
 }
 .title-div{
-	width: 60%;
 	height: auto;
 	float: left;
 }
@@ -39,7 +38,7 @@
 
 .borderc{
 	border: 2px solid #30336B;
-	border-radius: 30px;
+
 }
 
 .colorb{
@@ -225,7 +224,7 @@ position:absolute;
 	border-left: 5px solid #30336B;
 }
 .checked {
-  color: orange;
+  color: #FAD02E;
 }
 
 .iconeE{
@@ -237,7 +236,7 @@ position:absolute;
 }
 
 .enterI{
-	width: 300px;
+	width: 250px;
 	border-radius: 50px;
 	background-color: #065535;
 	color: white !important;
@@ -263,5 +262,24 @@ position:absolute;
 	width: 100%;
 	border-top: 2px solid gray;
 	margin-bottom: 20px;
+}
+
+.nav-icon{
+	display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    color: black;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+@media (max-width: 600px) {
+    .meetM{
+        margin-left: 80px;
+       
+    }
 }
 

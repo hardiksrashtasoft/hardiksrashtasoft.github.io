@@ -17,52 +17,13 @@
 </head>
 
 <body style="font-family: sans-serif;">
-<!-- <header>
-	<nav class="navbar navbar-expand-lg bg-light navbar-border">
-
-		<div class="row">
-			<div class="col-lg-3">
-				<a class="navbar-brand" href="#" style="margin-right: 50px; color: blue;">BLUE PLANET LOGO</a>
-			</div>
-		</div>
-	  
-	  <div class="col-lg-6">
-	  	<div>
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active" >
-	        <a class="nav-link" href="#" style="color: black;">HOME</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" style="color: black;">LISTING</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" style="color: black;">ACTIVITIES</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" style="color: black;">DESTINATIONS</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" style="color: black;">PAGES</a>
-	      </li>
-	    </ul>
-	  </div>
-	  </div>
-	  
-	  <div class="col-lg-3">
-	  	<div class="fright">
-		 	<img src="Image\basket.png" style="height: 30px; width: 30px;">
-	  	<button  type="button" class="btn btn-success">SEND INQUIRY</button>
-		</div>
-	  </div>
-	</nav>
-</header> -->
 <header>
-	<!--Navbar -->
+
 <nav class="mb-1 navbar navbar-expand-lg" style="border-bottom: 2px solid #DAE0E2;">
   <a class="navbar-brand" href="#"><b>Blue Planet Destination</b></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="nav-icon"><i class="fa fa-bars" aria-hidden="true" style="font-size: 25px;"></i></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
     <ul class="navbar-nav mr-auto">
@@ -130,21 +91,22 @@
 	<div class="row">
 		<div class="col-lg-8 col-md-8 col-sm-12">
 			<div class="title-div">
-				<p style="font-size: 27px; padding-top:  8px;">American Parks Trail end Rapid City</p>
+				<h3 style="padding-top:8px;">American Parks Trail end Rapid City</h3>
 				<p style="color: gray;">New York, NY, USA</p>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-12 col-md-4">
 			<div style="float: right; width: 40%; margin-top: 15px;">
-				<p style="float: right; margin-left: 10px;">4.2/5</p>
-					<div style="float: right;">
+				
+				<div style="float: right;">
+					<p style="float: right; margin-left: 10px;">4.2/5</p>
 					<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>
 					<span class="fa fa-star checked"></span>
 					<span class="fa fa-star"></span>
 				</div>
-				<p style="float: right; clear: both;">from 1 review</p>
+				<p style="float: right; clear: both;" class="mt-n3">from 1 review</p>
 			</div>
 		</div>
 	</div>
@@ -156,8 +118,8 @@
 
 <br>
 
-<div class="container participants">
-	<div class="row">
+<div class="container">
+	<div class="row participants mx-auto">
 		<div class="col-sm-12 col-md-12 col-lg-4 ">
 			<h5 class="participants1">Select Participants, date, time: </h5>
 		</div>
@@ -186,8 +148,8 @@
 </div>
 			
 <div class="container">
-	<div class="row">
-		<div class="col-lg-6 col-md-12 col-sm-12 fleft" >
+	<div class="row mb-3">
+		<div class="col-lg-6 col-md-12 col-sm-12 fleft mb-3" >
 			<div class=" card">
   				<div class="cardH bg-transparent borderc">
   					<p style="font-size: 17px; color: #30336B;"><b>Shared Tour with Extreme Red Dunes Bashing</b></p>
@@ -243,7 +205,7 @@
 </div>
 <div class="container">
 	<div class="row" >
-		<div class="col-lg-6 col-md-12 col-sm-12 fleft">
+		<div class="col-lg-6 col-md-12 col-sm-12 fleft mb-3">
 			<div class=" card">
   				<div class="cardH bg-transparent borderc">
   					<p style="font-size: 17px; color: #30336B;"><b>Shared Tour with VIP food Service</b></p>
@@ -549,7 +511,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-lg-4 col-md-6 col-sm-12">
+		<div class="col-lg-4 col-md-6 col-sm-12 ml-5">
 			<table>
 				<tr>
 					<td class="vt"><i class="fa fa-check iconeL6" aria-hidden="true"></i></td>
@@ -660,7 +622,7 @@
 	</div>
 
 	<h6><b>Meeting Point</b></h6>
-		<ul type="none" class="listM mt-n2">
+		<ul type="none" class="listM mt-n2" id="meetM">
 			<table>
 				<tr>
 					<td><i class="fa fa-circle iconeL" aria-hidden="true"></i></td>
@@ -797,8 +759,8 @@
 	<br>
 	<div class="row">
 		<div class="col-md-6 col-sm-12 col-lg-3">
-			<div class="border shadow p-3 mb-5 bg-white rounded" style="height: 330px; width: 95%;">
-				<img src="Image/image2.jpg" style="width: 100%; height: 50%;">
+			<div class="border shadow p-3 mb-5 bg-white rounded" style="height: auto; width: 100%;">
+				<img src="Image/image2.jpg" style="width: 100%; height: auto;">
 				<p class="p-2 m-0 text-center" style="color: gray;  font-size: 13px;"><i class="fa fa-map-marker" aria-hidden="true"></i> New York, United States</p>
 				<h6 class="px-3"><b>Two Hour Walking Tour Of Manhattan</b></h6>
 				<div class="px-3">
@@ -809,14 +771,16 @@
 				<span class="fa fa-star checked"></span>
 				<span style="color: gray;">  2 reviews</span>
 				</div>
+				<div class="pb-5">
 				<p style="color: gray;font-size: 12px;" class="px-3 fleft"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 hours</p>
 				<p style="color: gray;font-size: 12px;" class="fright pr-3"><i class="fa fa-check-square-o checked" aria-hidden="true"></i> from <span style="color: black; font-size: 15px;"><b>&#8364; 200,00</b></span></p>
+			</div>
 			</div>
 		</div>
 
 		<div class="col-md-6 col-sm-12 col-lg-3">
-			<div class="border shadow p-3 mb-5 bg-white rounded" style="height: 330px; width: 95%;">
-				<img src="Image\image3.jpeg" style="width: 100%; height: 50%;">
+			<div class="border shadow p-3 mb-5 bg-white rounded" style="height: auto; width: 100%;">
+				<img src="Image\image3.jpeg" style="width: 100%; height: auto%;">
 				<p class="p-2 m-0 text-center" style="color: gray;  font-size: 13px;"><i class="fa fa-map-marker" aria-hidden="true"></i> New York, United States</p>
 				<h6 class="px-3"><b>Two Hour Walking Tour Of Manhattan</b></h6>
 				<div class="px-3">
@@ -827,14 +791,16 @@
 				<span class="fa fa-star checked"></span>
 				<span style="color: gray;">  2 reviews</span>
 				</div>
+				<div class="pb-5">
 				<p style="color: gray;font-size: 12px;" class="px-3 fleft"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 hours</p>
 				<p style="color: gray;font-size: 12px;" class="fright pr-3"><i class="fa fa-check-square-o checked" aria-hidden="true"></i> from <span style="color: black; font-size: 15px;"><b>&#8364; 200,00</b></span></p>
+			</div>
 			</div>
 		</div>
 
 		<div class="col-md-6 col-sm-12 col-lg-3">
-			<div class="border shadow p-3 mb-5 bg-white rounded" style="height: 330px; width: 95%;">
-				<img src="Image/image2.jpg" style="width: 100%; height: 50%;">
+			<div class="border shadow p-3 mb-5 bg-white rounded" style="height: auto; width: 100%;">
+				<img src="Image/image2.jpg" style="width: 100%; height: auto;">
 				<p class="p-2 m-0 text-center" style="color: gray;  font-size: 13px;"><i class="fa fa-map-marker" aria-hidden="true"></i> New York, United States</p>
 				<h6 class="px-3"><b>Two Hour Walking Tour Of Manhattan</b></h6>
 				<div class="px-3">
@@ -845,14 +811,16 @@
 				<span class="fa fa-star checked"></span>
 				<span style="color: gray;">  2 reviews</span>
 				</div>
+				<div class="pb-5">
 				<p style="color: gray;font-size: 12px;" class="px-3 fleft"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 hours</p>
 				<p style="color: gray;font-size: 12px;" class="fright pr-3"><i class="fa fa-check-square-o checked" aria-hidden="true"></i> from <span style="color: black; font-size: 15px;"><b>&#8364; 200,00</b></span></p>
 			</div>
+		</div>
 		</div>
 
 		<div class="col-md-6 col-sm-12 col-lg-3">
-			<div class="border shadow p-3 mb-5 bg-white rounded" style="height: 330px; width: 95%;">
-				<img src="Image\image3.jpeg" style="width: 100%; height: 50%;">
+			<div class="border shadow p-3 mb-5 bg-white rounded mx-0" style="height: auto; width: 100%;">
+				<img src="Image\image3.jpeg" style="width: 100%; height: auto;">
 				<p class="p-2 m-0 text-center" style="color: gray;  font-size: 13px;"><i class="fa fa-map-marker" aria-hidden="true"></i> New York, United States</p>
 				<h6 class="px-3"><b>Two Hour Walking Tour Of Manhattan</b></h6>
 				<div class="px-3">
@@ -863,10 +831,12 @@
 				<span class="fa fa-star checked"></span>
 				<span style="color: gray;">  2 reviews</span>
 				</div>
+				<div class="pb-5">
 				<p style="color: gray;font-size: 12px;" class="px-3 fleft"><i class="fa fa-clock-o" aria-hidden="true"></i> 10 hours</p>
 				<p style="color: gray;font-size: 12px;" class="fright pr-3"><i class="fa fa-check-square-o checked" aria-hidden="true"></i> from <span style="color: black; font-size: 15px;"><b>&#8364; 200,00</b></span></p>
 			</div>
 		</div>
+	</div>
 
 		
 	</div>
@@ -881,24 +851,24 @@
 	<br>
 
 	<div class="row">
-		<div class="col-lg-4 col-md-6 col-sm-12 p-0">
-			<div style="height: 250px;" class="p-2">
+		<div class="col-lg-4 col-md-6 col-sm-12 p-0 px-2">
+			<div style="height: auto;" class="p-2">
 				<img src="Image/image2.jpg" style="width: 100%; height: 95%;">
 				<p style="color: gray; font-size: 12px;" class="m-0 mt-3">November 30, 2018</p>
 				<p><b>A Seaside Resetv in Laguna Beach</b></p>
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-6 col-sm-12 p-0">
-			<div style="height: 250px;" class="p-2">
+		<div class="col-lg-4 col-md-6 col-sm-12 p-0 px-2">
+			<div style="height: auto;" class="p-2">
 				<img src="Image/image3.jpeg" style="width: 100%; height: 95%;">
 				<p style="color: gray; font-size: 12px;" class="m-0 mt-3">November 30, 2018</p>
 				<p><b>Tiptoe throght the Tulips of Washington</b></p>
 			</div>
 		</div>
 
-		<div class="col-lg-4 col-md-6 col-sm-12 p-0">
-			<div style="height: 250px;" class="p-2">
+		<div class="col-lg-4 col-md-6 col-sm-12 p-0 px-2">
+			<div style="height: auto;" class="p-2">
 				<img src="Image/image2.jpg" style="width: 100%; height: 95%;">
 				<p style="color: gray; font-size: 12px;" class="m-0 mt-3">November 30, 2018</p>
 				<p><b>City Spotlighting: Philadelphia</b></p>
@@ -909,7 +879,7 @@
 </div>
 
 <br>
-	<div class="mt-5">
+	<div class="mt-1">
 		<div style="background-color: #EAF0F1;" class="text-center p-3"><b>
 			Since 2014, we've helped more than 500,000 people of all ages enjoy the best <br>outdoor experience of their lives. Whether it's for one day or a two-week<br> vacation, close to home or a foreign land.</b>
 		</div>
@@ -918,8 +888,19 @@
 	<div style="background-color: #45CE30;" style="height: 500px;">
 		<p class="iconeE"> <i class="fa fa-telegram" aria-hidden="true" ></i></p>
 		<h5 class="text-white text-center my-4"><b>Hot Deals. Awesome Chat. Straight to Your Inbox</b></h5>
-		<div class="text-center">
-		<input type="text" placeholder="Your Name" name="" class="mr-3 enterI text-white"><input type="email" placeholder="Your Email" name="" class="ml-3 enterI">
+		<div class="row">
+			<div class="col-md-1 col-lg-3 col-sm-1 fleft">
+				
+			</div>
+		<div class="col-sm-11 col-lg-3 col-md-5 text-center">
+		<input type="text" placeholder="Your Name" name="" class="enterI text-white">
+		</div>
+		<div class="col-sm-11 col-lg-3 col-md-5 text-center">
+		<input type="email" placeholder="Your Email" name="" class="enterI">
+		</div>
+		<div class="col-md-1 col-lg-3 col-sm-1">
+				
+			</div>
 		</div>
 		<div class="text-center mt-4">
 			<button class="btn btn-light btnS">Sign Me Up</button>

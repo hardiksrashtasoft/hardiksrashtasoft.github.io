@@ -16,3 +16,10 @@ function toggleIcon(e) {
 }
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+@media (max-width: @screen-md-max) {
+    .meetM{
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
