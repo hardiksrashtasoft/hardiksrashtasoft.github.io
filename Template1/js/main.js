@@ -48,77 +48,77 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $(document).on('click','.bookBtn1', function(e){
-    $(".hideS1").show();
-    $(".expandHide1").show();
-    $(".expandPrice1").hide();
-    $(this).css("background-color", "#00E600");
-    $(this).addClass("bookBtn2")
-    $(this).removeClass("bookBtn1");
+  $(document).on('click','.card1', function(e){
+    $(".cardBtn01").show();
+    $(".bestPriceShow1").show();
+    $(".bestPrice1").hide();
+    $(this).addClass("card01")
+    $(this).removeClass("card1");
   });
-  $(document).on('click','.bookBtn2', function(e){
-    $(".hideS1").hide();
-    $(".expandHide1").hide();
-    $(".expandPrice1").show();
-    $(this).css("background-color", "#6C757D");
-    $(this).addClass("bookBtn1")
-    $(this).removeClass("bookBtn2");
+  $(document).on('click','.card01', function(e){
+    $(".cardBtn01").hide();
+    $(".bestPriceShow1").hide();
+    $(".bestPrice1").show();
+    $(this).addClass("card1")
+    $(this).removeClass("card01");
   });
 });
 
 $(document).ready(function(){
-  $(document).on('click','.bookBtn3', function(e){
-    $(".hideS2").show();
-    $(".expandHide2").show();
-    $(".expandPrice2").hide();
-    $(this).css("background-color", "#00E600");
-    $(this).addClass("bookBtn4")
-    $(this).removeClass("bookBtn3");
+  $(document).on('click','.card2', function(e){
+    $(".cardBtn02").show();
+    $(".bestPriceShow2").show();
+    $(".bestPrice2").hide();
+    $(this).addClass("card02")
+    $(this).removeClass("card2");
   });
-  $(document).on('click','.bookBtn4', function(e){
-    $(".hideS2").hide();
-    $(".expandHide2").hide();
-    $(".expandPrice2").show();
-    $(this).css("background-color", "#6C757D");
-    $(this).addClass("bookBtn3")
-    $(this).removeClass("bookBtn4");
+  $(document).on('click','.card02', function(e){
+    $(".cardBtn02").hide();
+    $(".bestPriceShow2").hide();
+    $(".bestPrice2").show();
+    $(this).addClass("card2")
+    $(this).removeClass("card02");
   });
 });
 
 $(document).ready(function(){
-  $(document).on('click','.bookBtn5', function(e){
-    $(".hideS3").show();
-    $(".expandHide3").show();
-    $(".expandPrice3").hide();
-    $(this).css("background-color", "#00E600");
-    $(this).addClass("bookBtn6")
-    $(this).removeClass("bookBtn5");
+  $(document).on('click','.card3', function(e){
+    $(".cardBtn03").show();
+    $(".bestPriceShow3").show();
+    $(".bestPrice3").hide();
+    $(this).addClass("card03")
+    $(this).removeClass("card3");
   });
-  $(document).on('click','.bookBtn6', function(e){
-    $(".hideS3").hide();
-    $(".expandHide3").hide();
-    $(".expandPrice3").show();
-    $(this).css("background-color", "#6C757D");
-    $(this).addClass("bookBtn5")
-    $(this).removeClass("bookBtn6");
+  $(document).on('click','.card03', function(e){
+    $(".cardBtn03").hide();
+    $(".bestPriceShow3").hide();
+    $(".bestPrice3").show();
+    $(this).addClass("card3")
+    $(this).removeClass("card03");
   });
 });
 
 $(document).ready(function(){
-  $(document).on('click','.bookBtn7', function(e){
-    $(".hideS4").show();
-    $(".expandHide4").show();
-    $(".expandPrice4").hide();
-    $(this).css("background-color", "#00E600");
-    $(this).addClass("bookBtn8")
-    $(this).removeClass("bookBtn7");
+  $(document).on('click','.card4', function(e){
+    $(".cardBtn04").show();
+    $(".bestPriceShow4").show();
+    $(".bestPrice4").hide();
+    $(this).addClass("card04")
+    $(this).removeClass("card4");
   });
-  $(document).on('click','.bookBtn8', function(e){
-    $(".hideS4").hide();
-    $(".expandHide4").hide();
-    $(".expandPrice4").show();
-    $(this).css("background-color", "#6C757D");
-    $(this).addClass("bookBtn7")
-    $(this).removeClass("bookBtn8");
+  $(document).on('click','.card04', function(e){
+    $(".cardBtn04").hide();
+    $(".bestPriceShow4").hide();
+    $(".bestPrice4").show();
+    $(this).addClass("card4")
+    $(this).removeClass("card04");
   });
 });
+
+
+
+$(document).ready(function(){
+  $(".btn-ava").click(function(){
+    $(".conHideCard").show();
+  })
+})
