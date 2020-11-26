@@ -28,7 +28,8 @@
 }
 .participants1{
 	color: white;
-	padding: 20px;
+	font-size: 18.5px;
+	margin-top: 24px;
 
 }
 
@@ -335,6 +336,38 @@ position:absolute;
 
 .cardBr{
 	border-radius: 15px !important;
-	width: 140px !important;
+	width: 120px !important;
 }
 
+.activeA{
+	color: #00e600 !important;
+}
+
+.btn_inq{
+	 font-size: 15px !important;
+	 font-weight: bold !important;
+	 width: 180px;
+	 background-color: #00e600 !important;
+	 color: white !important;
+}
+
+a:hover{
+	color: #00e600 !important;
+	cursor:pointer;
+}
+
+.btn-ava{
+	 border-radius: 15px !important;
+	 width: 180px;
+	 background-color: #00e600 !important;
+	 color: white !important;
+	 font-weight: bold  !important;
+}
+
+.select-icon{
+	position: absolute;
+	top: 7Px;
+	left: 5px;
+	color: #30336B;
+	font-size: 12px !important	;
+}

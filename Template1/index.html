@@ -19,8 +19,8 @@
 <body style="font-family: sans-serif;">
 <header>
 
-<nav class="mb-1 navbar navbar-expand-lg" style="border-bottom: 2px solid #DAE0E2;">
-  <a class="navbar-brand" href="#"><b>Blue Planet Destination</b></a>
+<nav class="mb-1 navbar navbar-expand-lg p-1" style="border-bottom: 2px solid #DAE0E2;">
+  <a class="navbar-brand" href="#"><img src="Image/logo.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
     <span class="nav-icon"><i class="fa fa-bars" aria-hidden="true" style="font-size: 25px;"></i></span>
@@ -28,12 +28,12 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#" style="font-size: 15px;font-weight: bold;">HOME</a>
+        <a class="nav-link activeA" href="#" style="font-size: 15px;font-weight: bold;">HOME</a>
       </li>
       
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">LISTING
+        <a class="nav-link " id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">LISTING  <i class="fa fa-angle-down ddi" aria-hidden="true"></i>
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item" href="#">Action</a>
@@ -42,8 +42,8 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">ACTIVITIES
+        <a class="nav-link" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">ACTIVITIES  <i class="fa fa-angle-down ddi" aria-hidden="true"></i>
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item" href="#">Action</a>
@@ -52,8 +52,8 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">DESTINATIONS
+        <a class="nav-link" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">DESTINATIONS  <i class="fa fa-angle-down ddi" aria-hidden="true"></i>
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item" href="#">Action</a>
@@ -62,8 +62,8 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">PAGES
+        <a class="nav-link " id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="font-size: 15px;font-weight: bold;">PAGES <i class="fa fa-angle-down ddi" aria-hidden="true"></i>
         </a>
         <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item" href="#">Action</a>
@@ -79,7 +79,7 @@
       </li>
 
       <li class="nav-item">
-        <button class="btn btn-success"  style="font-size: 15px;font-weight: bold;width: 200px;">SEND INQUIRY</button>
+        <button class="btn btn_inq">SEND INQUIRY</button>
       </li>
       
     </ul>
@@ -92,7 +92,7 @@
 		<div class="col-lg-8 col-md-8 col-sm-12">
 			<div class="title-div">
 				<h3 style="padding-top:8px;">American Parks Trail end Rapid City</h3>
-				<p style="color: gray;">New York, NY, USA</p>
+				<p style="color: gray; font-size:15px; ">New York, NY, USA</p>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-12 col-md-4">
@@ -120,20 +120,25 @@
 
 <div class="container">
 	<div class="row participants mx-auto">
-		<div class="col-sm-12 col-md-12 col-lg-4 ">
+		<div class="col-sm-12 col-md-12 col-lg-3 " style="padding-right: 0px !important;">
 			<h5 class="participants1">Select Participants, date, time: </h5>
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-3 fleft p-4">
-			<select type="text" value="" name="Subject" style="width: 180px;"> 
+			<div style="position: relative;">
+			<i class="fa fa-users select-icon" aria-hidden="true"></i>
+			<select type="text" value="" name="Subject" style="width: 220px;padding: 2px; padding-left: 20px;"> 
          <option>Adult x 1</option> 
          <option>Adult x 2</option> 
          <option>Adult x 3</option> 
          <option>Adult x 4</option> 
          <option>Adult x 5</option> 
        </select>
+       </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-3 fleft p-4">
-       <select type="text" value="" name="Subject" style="width: 180px;"> 
+      	<div style="position: relative;">
+      		<i class="fa fa-calendar select-icon" aria-hidden="true"></i>
+       <select type="text" value="" name="Subject" style="width: 220px;padding: 2px; padding-left: 20px;">
          	<option>April 4, 2020</option> 
          	<option>April 5, 2020</option> 
          	<option>April 6, 2020</option> 
@@ -141,8 +146,9 @@
          	<option>April 8, 2020</option> 
         </select> 
 			</div>
-			<div class="col-sm-12 col-md-12 col-lg-2 py-3">
-				<button class="btn btn-success fleft" style="border-radius: 25px; width: 150px; ">Check Availbility</button>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-3 py-3 px-5">
+				<button class="btn fleft btn-ava">Check <a href=""></a>vailbility</button>
 			</div>
 	</div>
 </div>
@@ -152,8 +158,14 @@
 		<div class="col-lg-6 col-md-12 col-sm-12 fleft mb-3" >
 			<div class="card">
   				<div class="cardH bg-transparent borderc card-borderT">
+  					<div class="fleft" style="width: 70%;">
   					<p style="font-size: 16px; color: #30336B;"><b>Shared Tour with Extreme Red Dunes Bashing</b></p>
   					<p>Language: English</p>
+  					</div>
+  					<div class="text-center mt-3">
+  						<p>Total Price</p>
+  						<h4 class="mt-n3" style="color: #30336B"><b>&#x20B9; 5,354</b></h4>
+  					</div>
   				</div>
   			
   					<div class="cardO">
@@ -173,17 +185,47 @@
   						<div class="borderc fleft" id="timeM" style="width: auto; padding: 5px;">6:30 PM</div> -->
   					</div>
   				<div class="card-borderB" style="border-top: 0px; ">
-   						 <h6 class="card-title colorb fleft" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
-   						 <button class="fright btn btn-secondary cardBr">BOOK NOW</button>
+  					<div class="row">
+  						<div class="col-sm-12 col-md-12 col-lg-8 fleft">
+   						 <h6 class="card-title colorb fleft expandPrice1" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
+   						 <div class="expandHide1" style="display: none;">
+   						 	<p style="color: #30336B">Price Breakdown</p>
+   						 	<table>
+   						 		<tr>
+   						 			<td>Adult 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Child 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Infant 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 	</table>
+   						 </div>
+   						</div>
+   						<div class="col-lg-4 col-md-12 col-sm-12 text-center">
+   							<p style="color: #00e600; display: none; font-size: 30px;" class="hideS1 mb-1"><i class="fa fa-check-square-o" aria-hidden="true"></i></p>
+   						 <button class="btn btn-secondary cardBr bookBtn1">BOOK NOW</button>
+   						 <p style="color: #30336B; display: none; font-size: 10px;" class="hideS1 mt-3 mb-0"><b>Get Best Offer of blue Planet!!</b></p>
+  						</div>
   					</div>
+  				</div>
 			</div>
-			
 		</div>
 		<div class="col-lg-6 col-md-12 col-sm-12 fleft">
 			<div class=" card">
   				<div class="cardH bg-transparent borderc card-borderT">
-  					<p style="font-size: 17px; color: #30336B;"><b>Shared Tour</b></p>
+  					<div class="fleft" style="width: 70%;">
+  					<p style="font-size: 16px; color: #30336B;"><b>Shared Tour</b></p>
   					<p>Language: English</p>
+  					</div>
+  					<div class="text-center mt-3">
+  						<p>Total Price</p>
+  						<h4 class="mt-n3" style="color: #30336B"><b>&#x20B9; 5,354</b></h4>
+  					</div>
   				</div>
   			
   					<div class="cardO">
@@ -203,8 +245,33 @@
   						<div class="borderc fleft" style="width: auto; padding: 5px;background-color: #30336B; color: white;">6:30 PM</div> -->
   					</div>
   				<div class="card-borderB" style="border-top: 0px;">
-   						 <h6 class="card-title colorb fleft" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
-   						 <button class="fright btn btn-secondary cardBr">BOOK NOW</button>
+   						 <div class="row">
+  						<div class="col-sm-12 col-md-12 col-lg-8 fleft">
+   						 <h6 class="card-title colorb fleft expandPrice2" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
+   						 <div class="expandHide2" style="display: none;">
+   						 	<p style="color: #30336B">Price Breakdown</p>
+   						 	<table>
+   						 		<tr>
+   						 			<td>Adult 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Child 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Infant 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 	</table>
+   						 </div>
+   						</div>
+   						<div class="col-lg-4 col-md-12 col-sm-12 text-center">
+   							<p style="color: #00e600; display: none; font-size: 30px;" class="hideS2 mb-1"><i class="fa fa-check-square-o" aria-hidden="true"></i></p>
+   						 <button class="btn btn-secondary cardBr bookBtn3">BOOK NOW</button>
+   						 <p style="color: #30336B; display: none; font-size: 10px;" class="hideS2 mt-3 mb-0"><b>Get Best Offer of blue Planet!!</b></p>
+  						</div>
+  					</div>
   					</div>
 			</div>
 			
@@ -216,8 +283,14 @@
 		<div class="col-lg-6 col-md-12 col-sm-12 fleft mb-3">
 			<div class=" card">
   				<div class="cardH bg-transparent borderc card-borderT">
-  					<p style="font-size: 17px; color: #30336B;"><b>Shared Tour with VIP food Service</b></p>
+  				<div class="fleft" style="width: 70%;">
+  					<p style="font-size: 16px; color: #30336B;"><b>Shared Tour with Extreme Red Dunes Bashing</b></p>
   					<p>Language: English</p>
+  					</div>
+  					<div class="text-center mt-3">
+  						<p>Total Price</p>
+  						<h4 class="mt-n3" style="color: #30336B"><b>&#x20B9; 5,354</b></h4>
+  					</div>
   				</div>
   			
   					<div class="cardO">
@@ -237,8 +310,33 @@
   						<div class="borderc fleft" style="width: auto; padding: 5px;background-color: #30336B; color: white;">6:30 PM</div> -->
   					</div>
   				<div class="card-borderB" style="border-top: 0px;">
-   						 <h6 class="card-title colorb fleft" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
-   						 <button class="fright btn btn-secondary cardBr">BOOK NOW</button>
+   						<div class="row">
+  						<div class="col-sm-12 col-md-12 col-lg-8 fleft">
+   						 <h6 class="card-title colorb fleft expandPrice3" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
+   						 <div class="expandHide3" style="display: none;">
+   						 	<p style="color: #30336B">Price Breakdown</p>
+   						 	<table>
+   						 		<tr>
+   						 			<td>Adult 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Child 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Infant 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 	</table>
+   						 </div>
+   						</div>
+   						<div class="col-lg-4 col-md-12 col-sm-12 text-center">
+   							<p style="color: #00e600; display: none; font-size: 30px;" class="hideS3 mb-1"><i class="fa fa-check-square-o" aria-hidden="true"></i></p>
+   						 <button class="btn btn-secondary cardBr bookBtn5">BOOK NOW</button>
+   						 <p style="color: #30336B; display: none; font-size: 10px;" class="hideS3 mt-3 mb-0"><b>Get Best Offer of blue Planet!!</b></p>
+  						</div>
+  					</div>
   					</div>
 			</div>
 			
@@ -246,8 +344,14 @@
 		<div class="col-lg-6 col-md-12 col-sm-12 fleft">
 			<div class=" card">
   				<div class="cardH bg-transparent borderc card-borderT">
-  					<p style="font-size: 17px; color: #30336B;"><b>Shared Tour with Private Vehicle</b></p>
+  					<div class="fleft" style="width: 70%;">
+  					<p style="font-size: 16px; color: #30336B;"><b>Shared Tour with Extreme Red Dunes Bashing</b></p>
   					<p>Language: English</p>
+  					</div>
+  					<div class="text-center mt-3">
+  						<p>Total Price</p>
+  						<h4 class="mt-n3" style="color: #30336B"><b>&#x20B9; 5,354</b></h4>
+  					</div>
   				</div>
   			
   					<div class="cardO">
@@ -267,8 +371,33 @@
   						<div class="borderc fleft" style="width: auto; padding: 5px;background-color: #30336B; color: white;">6:30 PM</div> -->
   					</div>
   				<div class="card-borderB" style="border-top: 0px;">
-   						 <h6 class="card-title colorb fleft" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
-   						 <button class="fright btn btn-secondary cardBr">BOOK NOW</button>
+   						 <div class="row">
+  						<div class="col-sm-12 col-md-12 col-lg-8 fleft">
+   						 <h6 class="card-title colorb fleft expandPrice4" style="margin-top: 8px;">Get Best Offer Of Blue Planet!!</h6>
+   						 <div class="expandHide4" style="display: none;">
+   						 	<p style="color: #30336B">Price Breakdown</p>
+   						 	<table>
+   						 		<tr>
+   						 			<td>Adult 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Child 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 		<tr>
+   						 			<td>Infant 1 x &#x20B9; 5,354</td>
+   						 			<td class="pl-5">&#x20B9; 5,354</td>
+   						 		</tr>
+   						 	</table>
+   						 </div>
+   						</div>
+   						<div class="col-lg-4 col-md-12 col-sm-12 text-center">
+   							<p style="color: #00e600; display: none; font-size: 30px;" class="hideS4 mb-1"><i class="fa fa-check-square-o" aria-hidden="true"></i></p>
+   						 <button class="btn btn-secondary cardBr bookBtn7">BOOK NOW</button>
+   						 <p style="color: #30336B; display: none; font-size: 10px;" class="hideS4 mt-3 mb-0"><b>Get Best Offer of blue Planet!!</b></p>
+  						</div>
+  					</div>
   					</div>
 			</div>
 			
