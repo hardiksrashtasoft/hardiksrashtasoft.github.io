@@ -122,3 +122,115 @@ $(document).ready(function(){
     $(".conHideCard").show();
   })
 })
+
+
+$(document).ready(function(){
+  $(document).on('click','.liSeeMore', function(e){
+    $(".liHide1").show();
+    $(".liUp").show();
+    $(".liDown").hide();
+    $(this).text("See Less");
+    $(this).addClass("liSeeMore1")
+    $(this).removeClass("liSeeMore");
+  });
+  $(document).on('click','.liSeeMore1', function(e){
+    $(".liHide1").hide();
+    $(this).text("See More");
+    $(".liUp").hide();
+    $(".liDown").show();
+    $(this).addClass("liSeeMore")
+    $(this).removeClass("liSeeMore1");
+  });
+});
+
+$(document).ready(function(){
+  $(document).on('click','.liSeeMore2', function(e){
+    $(".liHide2").show();
+    $(".liUp2").show();
+    $(".liDown2").hide();
+    $(this).text("See Less");
+    $(this).addClass("liSeeMore3")
+    $(this).removeClass("liSeeMor2");
+  });
+  $(document).on('click','.liSeeMore3', function(e){
+    $(".liHide2").hide();
+    $(this).text("See More");
+    $(".liUp2").hide();
+    $(".liDown2").show();
+    $(this).addClass("liSeeMore2")
+    $(this).removeClass("liSeeMore3");
+  });
+});
+
+
+
+$(document).ready(function(){
+  $(document).on('click','.itineraryList1', function(e){
+    $(".itiShow1").show();
+    
+    $(this).addClass("itineraryList01")
+    $(this).removeClass("itineraryList1");
+  });
+  $(document).on('click','.itineraryList01', function(e){
+    $(".itiShow1").hide();
+
+    $(this).addClass("itineraryList1")
+    $(this).removeClass("itineraryList01");
+  });
+});
+
+
+$(document).ready(function(){
+  $(document).on('click','.itineraryList2', function(e){
+    $(".itiShow2").show();
+    
+    $(this).addClass("itineraryList02")
+    $(this).removeClass("itineraryList2");
+  });
+  $(document).on('click','.itineraryList02', function(e){
+    $(".itiShow2").hide();
+
+    $(this).addClass("itineraryList2")
+    $(this).removeClass("itineraryList02");
+  });
+});
+
+
+$(document).ready(function(){
+  $(document).on('click','.itineraryList3', function(e){
+    $(".itiShow3").show();
+    
+    $(this).addClass("itineraryList03")
+    $(this).removeClass("itineraryList3");
+  });
+  $(document).on('click','.itineraryList03', function(e){
+    $(".itiShow3").hide();
+
+    $(this).addClass("itineraryList3")
+    $(this).removeClass("itineraryList03");
+  });
+});
+
+function onload()
+{
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; 
+  var yyyy = today.getFullYear();
+  yyyy = parseInt(yyyy) + 1;
+  today = dd+'-'+mm+'-'+yyyy;
+  document.getElementById("todayDate").value = today;
+}
+
+$(document).ready(function(){
+  var date = new Date();
+
+  var day = ("0" + date.getDate()).slice(-2); var month = ("0" + (date.getMonth() + 1)).slice(-2);
+
+  var today = date.getFullYear()+"-"+(month)+"-"+(day) ;
+});
+
+$('#dateid').val(today);
+
+
+

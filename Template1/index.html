@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1\css\bootstrap-reboot.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1\css\bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets\datetimePicker\jquery.datetimepicker.css">
+  <link rel="stylesheet" type="text/css" href="https://developer.srashtasoft.com/projects/blueplanetdestinationsite/wp-content/themes/traveler/v2/js/daterangepicker/daterangepicker.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -109,7 +111,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-3 fleft p-4">
 			<div style="position: relative;">
 			<i class="fa fa-users select-icon" aria-hidden="true"></i>
-			<select type="text" value="" name="Subject" style="width: 220px;padding: 2px; padding-left: 20px;"> 
+			<select type="text" value="" name="Subject" class="py-2 selRad" style="width: 220px;padding: 2px; padding-left: 20px;"> 
          <option>Adult x 1</option> 
          <option>Adult x 2</option> 
          <option>Adult x 3</option> 
@@ -120,17 +122,10 @@
       </div>
       <div class="col-sm-12 col-md-12 col-lg-3 fleft p-4">
       	<div style="position: relative;">
-      		<i class="fa fa-calendar select-icon" aria-hidden="true"></i>
-       <select type="text" value="" name="Subject" style="width: 220px;padding: 2px; padding-left: 20px;">
-         	<option>April 4, 2020</option> 
-         	<option>April 5, 2020</option> 
-         	<option>April 6, 2020</option> 
-         	<option>April 7, 2020</option> 
-         	<option>April 8, 2020</option> 
-        </select> 
+          <input type="date" name="" class="datetime-p selRad" id="dateid" style="width: 220px; padding-top: 6px;padding-bottom: 6px; padding-left: 20px;">
 			</div>
 			</div>
-			<div class="col-sm-12 col-md-12 col-lg-3 py-3 px-5">
+			<div class="col-sm-12 col-md-12 col-lg-3 py-4 px-5">
 				<button class="btn fleft btn-ava" >Check Availbility</button>
 			</div>
 	</div>
@@ -384,7 +379,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-sm-12 col-md-6 col-lg-4">
+		<div class="col-sm-12 col-md-12 col-lg-6">
 
 			<table>
 				<tr>
@@ -425,11 +420,11 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><p class="mt-n3">Hotel pick-up for the following area of <br> Phuket: Patong, Kata, Karon, and Phuket City.</p></td>
+					<td><p class="mt-n3">Hotel pick-up for the following area  Phuket: Patong, Kata, Karon, and Phuket City.</p></td>
 				</tr>
 			</table>
 		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4">
+		<div class="col-sm-12 col-md-12 col-lg-6">
 				<table>
 				<tr>
 					<td class="vt"><i class="fa fa-print" aria-hidden="true"></i></td>
@@ -473,7 +468,7 @@
 </div>
 
 <div class="container">
-	<div class="row">
+	<div class="row mb-4">
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<h4><b>Experience</b></h4>
 		</div>
@@ -510,7 +505,16 @@
 			<br>
 			<li>Sit back and relax in air-conditioned comfort and enjoy the views of Thailand's beautiful seaside After the boat journey, get ready After the boat journey After the boat journey, get ready to begin your perfect holiday on the beautiful island After the boat journey, get ready After the boat journey, get ready.</li>
 			<br>
-			<li>One-way ticket or roundtrip ticket are available for purschase and are open ticket for any time slot and are open ticket for any time slot and are open. See less.</li>
+			<li style="display: none;" class="liHide1">One-way ticket or roundtrip ticket are available for purschase and are open ticket for any time slot and are open ticket for any time slot and are open. See less.</li>
+      <br>
+      <li style="display: none;" class="liHide1">If you are in Phuket, you can access the meeting point at Rassada Habour 30 minutes before the departure or select the option to be picked departure departure or select the option to be picked up from Patong, Kata, Karon, or the Phuket City area departure or select the option to be picked.</li>
+      
+      <div>
+
+      <i class="fa fa-caret-down fright liDown m-1" aria-hidden="true"></i><i class="fa fa-caret-up fright liUp m-1" aria-hidden="true" style="display: none;"></i>
+      <p class="liSeeMore fright blueC">See More </p>
+      
+      </div>
 		</ul>
 		<br>
 
@@ -645,82 +649,65 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-sm-9 col-md-9 col-lg-9">
+		<div class="col-sm-12 col-md-12 col-lg-12">
 			<h4><b>Itinerary</b></h4>
 		</div>
 	</div>
-
-	<div class="row">
-		<div class="col-sm-9 col-md-9 col-lg-9">
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-        <div class="panel panel-default ">
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: black;">
-                        <i class="more-less glyphicon glyphicon-plus"></i>
-                        <b>8:00 See the impressive LA grid from atop Mount Hollywood1</b>
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse border1" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                	<div class="col-lg-5 col-sm-12 col-md-5 fleft">
-                		<img src="Image\image1.jpg">
-                	</div>
-                	<div class="col-lg-7 col-sm-12 col-md-7 fleft">
-                		In 1972, the Urraco, which had experienced several initial slowdowns, was finally put into production. Almost inevitably, the S version also arrived in October of that year. In this case, the goal was not to enhance the car's performance but to improve its overall quality, which had been neglected in the haste to start production.
-                	</div>
-                       
-                </div>
-            </div>
+<br>
+  <div class="row mb-2">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="itineraryList1 itiStyle ">
+      <h5 class="p-3 my-0"><b>8 pm Start</b></h5>
+      <div class="row p-3 itiShow1" style="display: none;">
+        <div class="col-lg-4 col-sm-12 fleft">
+          <img src="Image\image3.jpeg" style="height: 200px; width: 350px;">
         </div>
-
-        <div class="panel panel-default" style="clear: both;">
-            <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: black;">
-                        <i class="more-less glyphicon glyphicon-plus"></i>
-                        <b>10:00 Exercise and burn calories while you sightsee</b>
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"  style="background-color: #FAFAFA;">
-                <div class="panel-body">
-                    <div class="col-lg-5 col-sm-12 col-md-5 fleft">
-                		<img src="Image\image1.jpg">
-                	</div>
-                	<div class="col-lg-7 col-sm-12 col-md-7 fleft">
-                		In 1972, the Urraco, which had experienced several initial slowdowns, was finally put into production. Almost inevitably, the S version also arrived in October of that year. In this case, the goal was not to enhance the car's performance but to improve its overall quality, which had been neglected in the haste to start production.
-                	</div>
-                </div>
-            </div>
+        <div class="col-lg-8 col-sm-1" style="color: #5E6D77;">
+          <p>
+          "Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letra"
+          </p>
         </div>
+      </div>
+    </div>
+    </div>
+  </div>
 
-        <div class="panel panel-default" style="clear: both;">
-            <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: black;">
-                        <i class="more-less glyphicon glyphicon-plus"></i>
-                        <b>12:00 Leisurely hike in Griffith Path with panoramic city views</b>
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                   <div class="col-lg-5 col-sm-12 col-md-5 fleft">
-                		<img src="Image\image1.jpg">
-                	</div>
-                	<div class="col-lg-7 col-sm-12 col-md-7 fleft">
-                		In 1972, the Urraco, which had experienced several initial slowdowns, was finally put into production. Almost inevitably, the S version also arrived in October of that year. In this case, the goal was not to enhance the car's performance but to improve its overall quality, which had been neglected in the haste to start production.
-                	</div>
-                </div>
-            </div>
+  <div class="row mb-2">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="itineraryList2 itiStyle ">
+      <h5 class="p-3 my-0"><b>9 pm Start</b></h5>
+      <div class="row p-3 itiShow2" style="display: none;">
+        <div class="col-lg-4 col-sm-12 fleft">
+          <img src="Image\image3.jpeg" style="height: 200px; width: 350px;">
         </div>
+        <div class="col-lg-8 col-sm-1" style="color: #5E6D77;">
+          <p>
+          "Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letra"
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
 
-    </div><!-- panel-group -->
-		</div>
-	</div>
+  <div class="row mb-2">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="itineraryList3 itiStyle ">
+      <h5 class="p-3 my-0"><b>10 pm Start</b></h5>
+      <div class="row p-3 itiShow3" style="display: none;">
+        <div class="col-lg-4 col-sm-12 fleft">
+          <img src="Image\image3.jpeg" style="height: 200px; width: 350px;">
+        </div>
+        <div class="col-lg-8 col-sm-1" style="color: #5E6D77;">
+          <p>
+          "Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letra"
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
 </div>
 
 <div class="container">
@@ -772,15 +759,23 @@
 					<td><i class="fa fa-circle iconeL" aria-hidden="true"></i></td>
 					<td><li>Hotel pick-up available (if option selected) from Phuket in Patong, Kata, Karon, and Phuket City area only</li></td>
 				</tr>
-				<tr>
+				<tr >
 					<td><li><i class="fa fa-circle iconeL" aria-hidden="true"></i></td>
 					<td><li>Ferry departs from Phuket to Koh Phi Phi at 8:30 AM with expected arrival at 10:15</li></td>
 				</tr>
-				<tr>
-					<td></td>
-					<td><li><a href="#" style="color: #30336B;">See more</a></li></td>
-				</tr>
+        <tr style="display: none;" class="liHide2">
+          <td><li><i class="fa fa-circle iconeL" aria-hidden="true" style="vertical-align: top;"></i></td>
+          <td><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li></td>
+        </tr>
+				
 			</table>
+
+      <div>
+
+      <i class="fa fa-caret-down fright liDown2 m-1" aria-hidden="true"></i><i class="fa fa-caret-up fright liUp2 m-1" aria-hidden="true" style="display: none;"></i>
+      <p class="liSeeMore2 fright blueC">See More </p>
+      
+      </div>
 		</ul>
 </div>
 
@@ -790,7 +785,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-sm-9 col-md-9 col-lg-9">
+		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="row">
 				<div class="col-sm-8 col-md-8 col-lg-8">
 					<h4><b>Tour's Location</b></h4>
@@ -801,10 +796,10 @@
 			</div>
 			<br>
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div id="map-container-google-1" class="z-depth-1-half map-container">
+				<div class="col-sm-12 col-md-12 col-lg-12 ">
+					<div>
   					<iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-   					style="border:0" allowfullscreen></iframe>
+   					style="border:0;height: 450px;width:100%; " allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -818,28 +813,28 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-sm-9 col-md-9 col-lg-9">
+		<div class="col-sm-12 col-md-12 col-lg-12">
 			<h4><b>FAQs</b></h4>
 		</div>
 	</div>
  <br>
 	<div class="row">
-		<div class="col-sm-9 col-md-9 col-lg-9"> 
-				<div class="accordion by-5">
-					<h5 class="accordion-toggle"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; &nbsp; In 1972, the Urraco</h5>
+		<div class="col-sm-12 col-md-12 col-lg-12"> 
+				<div class="accordion">
+					<h5 class="accordion-toggle py-3"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; &nbsp; In 1972, the Urraco</h5>
 					<div class="accordion-content">
 						<p>In 1972, the Urraco, which had experienced several initial slowdowns, was finally put into production. Almost inevitably, thes version also arrived in October of that year. In this case, the goal was not to enhance the car's performance but to improve its overall quality, which had been neglected in the haste to start production.
 						</p>
 					</div>
 			
-					<h5 class="accordion-toggle"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; &nbsp; Which had experienced several initial slowdowns</h5>
+					<h5 class="accordion-toggle py-3"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; &nbsp; Which had experienced several initial slowdowns</h5>
 					<div class="accordion-content">
 						<p>
 							In 1972, the Urraco, which had experienced several initial slowdowns, was finally put into production. Almost inevitably, thes version also arrived in October of that year. In this case, the goal was not to enhance the car's performance but to improve its overall quality, which had been neglected in the haste to start production.
 						</p>
 					</div>
 			
-					<h5 class="accordion-toggle"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; &nbsp; The haste to start production</h5>
+					<h5 class="accordion-toggle py-3"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; &nbsp; The haste to start production</h5>
 					<div class="accordion-content">
 						<p>
 							In 1972, the Urraco, which had experienced several initial slowdowns, was finally put into production. Almost inevitably, thes version also arrived in October of that year. In this case, the goal was not to enhance the car's performance but to improve its overall quality, which had been neglected in the haste to start production.
@@ -852,64 +847,64 @@
 
 <div class="container mt-5">
 	<div class="row">
-		<div class="col-sm-9 col-md-9 col-lg-9">
+		<div class="col-sm-12 col-md-12 col-lg-12">
 			<h4><b>Reviews</b></h4>
 		</div>
 	</div>
 
-	<div class="col-sm-9 col-md-9 col-lg-9 p-4">
+	<div class="col-sm-12 col-md-12 col-lg-12 p-4">
 
-	<div class="row border p-4">
+	<div class="row border p-4 text-center">
 			<div class="col-lg-5 col-md-5 col-sm-12">
 			<div style="text-align: center;margin-top: 25px;" class="border-right">
-				<h4 style="color: blue;">4.2/5</h4>
+        <p style="color: #89c541; font-weight: bold;" class="mb-0"><span style="font-size: 45px;padding: 5px;">4.2</span><span style="font-size: 30px;">/</span><span style="font-size: 25px;">5</span></p>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star"></span>
-				<p>Based on 1 review</p>
+				<p style="font-weight: bold;"><span style="color: gray;">Based on </span><span  style="color: #89c541;">1 review</span></p>
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-7 col-lg-7 pl-4">
+		<div class="col-sm-12 col-md-7 col-lg-7 text-center my-4 my-4">
 			<table>
 				<tr>
-					<td>Services</td>
+					<td class="fright">Services</td>
 					<td class="px-3">
-						 <div class="progress" style="width: 200px; height: 7px;">
+						 <div class="progress" style="width: 300px; height: 7px;">
      						<div class="progress-bar" style="width:100%;background-color:#FAD02E;"></div>
   					</div>
 					</td>
 					<td>5/5</td>
 				</tr>
 				<tr>
-					<td>Organization</td>
+					<td class="fright">Organization</td>
 					<td class="px-3">
-						<div class="progress" style="width: 200px; height: 7px;">
+						<div class="progress" style="width: 300px; height: 7px;">
      						<div class="progress-bar" style="width:0%;"></div>
   					</div>
 					</td>
 					<td>0/5</td>
 				</tr>
-					<td>Friendlines</td>
+					<td class="fright">Friendlines</td>
 					<td class="px-3">
-						<div class="progress" style="width: 200px; height: 7px;">
+						<div class="progress" style="width: 300px; height: 7px;">
      						<div class="progress-bar" style="width:0%;"></div>
   					</div>
 					</td>
 					<td>0/5</td>
 				</tr>
-					<td>Area Expert</td>
+					<td class="fright">Area Expert</td>
 					<td class="px-3">
-						<div class="progress" style="width: 200px; height: 7px;">
+						<div class="progress" style="width: 300px; height: 7px;">
      						<div class="progress-bar" style="width:0%;"></div>
   					</div>
 					</td>
 					<td>0/5</td>
 				</tr>
-					<td>Safety</td>
+					<td class="fright">Safety</td>
 					<td class="px-3">
-						<div class="progress" style="width: 200px; height: 7px;">
+						<div class="progress" style="width: 300px; height: 7px;">
      						<div class="progress-bar" style="width:0%;"></div>
   					</div>
 					</td>
@@ -920,13 +915,6 @@
 	</div>
 <hr class="my-5">
 
-	</div>
-</div>
-
-
-<div class="container">
-<hr class="my-5">
-</div>
 
 <div class="container mb-4">
 	<div class="row">
@@ -1058,13 +1046,9 @@
 </div>
 
 <br>
-	<div class="mt-1">
-		<div style="background-color: #EAF0F1;" class="text-center p-3">
-			<i>Since 2014, we've helped more than 500,000 people of all ages enjoy the best <br>outdoor experience of their lives. Whether it's for one day or a two-week<br> vacation, close to home or a foreign land.</i>
-		</div>
-	</div>
+	
 
-	<div style="background-color: #45CE30;" style="height: 500px;">
+	<!-- <div style="background-color: #45CE30;" style="height: 500px;">
 		<p class="iconeE"> <i class="fa fa-telegram" aria-hidden="true" ></i></p>
 		<h5 class="text-white text-center my-4"><b>Hot Deals. Awesome Chat. Straight to Your Inbox</b></h5>
 		<div class="row">
@@ -1084,7 +1068,23 @@
 		<div class="text-center mt-4">
 			<button class="btn btn-light btnS">Sign Me Up</button>
 		</div>
-	</div>
+	</div> -->
+<div class="mt-1">
+    <div class="row" style="background-color: #f2f2f2;">
+      <div class="col-lg-6 col-sm-6">
+        <div class="my-5 fleft col-md-5 col-sm-12 col-lg-5" style="padding-left: 150px;">
+          <img src="Image\ico_email.svg">
+        </div>
+        <div class="col-md-7 col-sm-12 col-lg-7 fright my-5">
+          <h3>Get Updates & More</h3>
+          <p style="color: gray;">Thoughtful thoughts to your inbox</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-6 " style="margin-top: 65px;">
+        <input type="email" name="" class="emailIn"><button class="subBtn">Subscribe</button>
+      </div>
+    </div>
+</div>
 
 <footer>
 	<div class="container mt-4">
@@ -1148,12 +1148,6 @@
 
 				<ul type="none" class="ml-0 pl-0">
 					
-					<li style="color: gray;">Languages</li>
-					<select class="select11">
-						<option>Engloish</option>
-						<option>Hindi</option>
-						<option>Gujarati</option>
-					</select>
 					<li style="color: gray;">Currencies</li>
 					<select class="select11">
 						<option>EUR</option>
@@ -1176,11 +1170,12 @@
 
 
 
-
+  <script src="https://developer.srashtasoft.com/projects/blueplanetdestinationsite/wp-content/themes/traveler/v2/js/daterangepicker/daterangepicker.js"></script>
 	<script src="js\main.js"></script>
 	<script src="bootstrap-4.3.1\js\bootstrap.bundle.js"></script>
 	<script src="bootstrap-4.3.1\js\bootstrap.bundle.min.js"></script>
 	<script src="bootstrap-4.3.1\js\bootstrap.js"></script>
 	<script src="bootstrap-4.3.1-dist\js\bootstrap.min.js"></script>
+  <script src="assets\datetimePicker\jquery.datetimepicker.js"></script>
 </body>
 </html>
